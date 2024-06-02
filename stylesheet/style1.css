@@ -1,0 +1,518 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+body
+{
+    display: grid;
+    height: 100%;
+    background-color: rgb(226, 224, 224);
+    grid-template-areas: 'header header header header header'
+                         'main main main main main' ;
+    grid-gap: 20px;
+   
+}
+
+.header
+{
+    background-color: white;
+    height: 60px;
+    grid-area: header;
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px 0px 20px;
+    width: 100%;
+    
+}
+.left
+{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+    
+}
+
+.header > .right
+{
+    display: flex;
+    align-items: center;
+    width: 42%;
+    color: rgb(91, 90, 90);
+}
+
+.right-a
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+   
+    
+}
+
+.right-b
+{
+    display: flex;
+    flex-direction: row;
+    border-left: 1px solid black;
+    margin: 5px;
+    margin-right: 20px;
+}
+
+.right-b > img
+{
+   border-radius: 50%;
+   width: 30px;
+   height: 30px;
+   border: 1px solid black;
+   margin-left: 10px;
+   margin-right: 5px;
+}
+.right-1 , .right-2 , .right-3 , .right-4 , .right-5
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.logo
+{
+    width: 40px;
+    height: 35px;
+    padding: 0px 10px 5px 0px;
+}
+
+.searchBar
+{
+    width: 250px;
+  
+    border: none;
+    height: 35px;
+    background-color: rgb(190, 202, 245);
+}
+
+.connections, .profile-view 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.main
+{
+    
+   
+    grid-area: main;
+    height: 900px;
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 240px 550px auto;
+    grid-gap: 40px;
+    grid-template-areas: "main-left main-middle main-middle main-right";
+    padding: 20px;
+}
+
+
+
+.groups > h5
+{
+    color: rgb(165, 165, 241);
+}
+.groups .group
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 45%;
+    margin: 2px;
+    color: grey;
+}
+.main-left
+{
+    background-color: white;
+    grid-area: main-left;
+    height: 620px;
+    border-radius: 6px;
+    
+}
+
+.Recent > h5
+{
+    color:rgb(117, 112, 112);
+}
+
+.list-tensorflow > li
+{
+    color: grey;
+}
+
+
+.followed-hashtag > h5
+{
+   color: rgb(165, 165, 241);
+}
+
+.followed-hashtag-tensorflow > li
+{
+    color: rgb(94, 93, 93);
+}
+
+.main-left  .middle 
+{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 30%;
+}
+
+.main-left .bottom
+{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+
+
+.User-profile-image
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(192, 191, 191);
+}
+.backgrounImage
+{
+    width: 100%;
+    height: 70px;
+    background-image: linear-gradient(to right,rgb(237, 142, 158), rgb(211, 26, 110),rgb(210, 62, 87),rgb(164, 147, 150));
+   
+    border-radius:5px;
+    margin-bottom: 40px;
+}
+
+.main-middle
+{   
+
+   
+    grid-area: main-middle;
+    display: grid;
+   grid-template-rows: 120px 400px 400px;
+    grid-template-areas:  "top top top"
+                         "middle middle middle"
+                         "bottom bottom bottom";
+    grid-gap: 20px;
+}
+
+.main-middle > .top
+{
+   grid-area: top; 
+   background-color: white;
+   border-radius:10px;
+}
+
+.main-middle > .middle
+{
+    grid-area: middle;
+    background-color: white;
+}
+
+.main-middle > .bottom
+{
+    grid-area: bottom;
+    background-color: white;
+}
+.photo-search
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.photo > img
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px;
+    border: 1px solid grey;
+    
+
+} 
+
+.search > input
+{
+    width: 500px;
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid grey;
+    margin-top: 10px;
+}
+
+.post-requirements
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.post-requrement
+{
+    display: flex;
+    flex-direction: row;
+    color: gray;
+    
+}
+
+.post-requrement > .bi-image-fill
+{
+   color: rgb(83, 129, 228);
+   margin-right: 7px;
+  
+}
+
+.post-requrement > .bi-youtube
+{
+   color: rgb(63, 227, 63);
+   margin-right: 7px;
+  
+}
+
+.post-requrement > .bi-calendar-event
+{
+   color:orange;
+   margin-right: 7px;
+  
+}
+
+.post-requrement > .bi-card-text
+{
+   color: rgb(214, 32, 32);
+   margin-right: 7px;
+  
+}
+
+.post-middle-1
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 25%;
+    justify-content: space-between;
+}
+
+.more-options
+{
+    margin: 4px;
+    font-weight: 500;
+}
+.post-middle-1a
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.post-middle-1a > img
+{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.comapany-info
+{
+    margin: 10px;
+}
+
+.post-image > img
+{
+   width: 100%;
+   height: 250px;
+   position: relative;
+   bottom: 30px;
+}
+
+.comapany-info > p
+{
+    color: grey;
+}
+
+.like-share-comment-count
+{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    position: relative;
+    bottom: 30px;
+   
+}
+
+.like-comment-share
+{  width: 100%;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    border-top: 1px solid rgb(166, 164, 164);
+    position: relative;
+    bottom: 20px;
+    padding-top: 10px;
+    color: rgb(68, 67, 67);
+    
+   
+}
+.main-right
+{
+    
+    grid-area: main-right;
+  
+    display: grid;
+   grid-template-rows: 250px 180px 420px;
+    grid-template-areas:  "top top top"
+                         "middle middle middle"
+                         "bottom bottom bottom";
+    grid-gap: -10px;
+}
+
+.main-right > .top
+{
+    grid-area: top;
+    background-color: white;
+    border-radius: 8px;
+    font-weight: 700;
+    padding: 5px;
+    
+    
+}
+.top > .head
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3px;
+}
+
+.middle > .head
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3px;
+}
+
+.main-right > .middle
+{
+    grid-area: top;
+    background-color: white;
+    border-radius: 8px;
+    font-weight: 700;
+    padding: 5px;
+}
+.news-list
+{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    justify-content: space-around;
+}
+.main-right > .middle
+{
+    grid-area: middle;
+    background-color: white;
+    border-radius: 8px;
+    height: fit-content;
+    width: max-content;
+}
+
+.main-right > .top
+{
+    height: fit-content;
+    width: max-content;
+}
+
+.news-readers
+{
+    color: grey;
+    font-weight: 100;
+    font-size: medium;
+}
+
+.main-right > .bottom
+{
+    grid-area: bottom;
+    background-color:white;
+    border-radius: 8px;
+}
+
+.bottom > .head
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3px;
+    font-weight: 700;
+}
+
+.unilever-image > img
+{
+    height: 20px;
+    width: 50px;
+    position: relative;
+    top: 10px;
+}
+
+.unilever
+{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    border-bottom: 1px solid rgb(180, 178, 178);
+   
+}
+
+.unilever-title > p
+{
+    color: gray;
+}
+
+.unilever-title > button
+{
+    width: 160px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: white;
+    margin-top: 1px;
+    border-width: 2px 1px 2px 1px;
+}
+
+.linkedIN-image > img
+{
+    height: 30px;
+    width: 50px;
+    position: relative;
+    top: 10px;
+    margin-right:4px;
+}
+
+.linkedIN
+{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+   
+   
+}
+
+.main-right > .bottom
+{
+    height: fit-content;
+}
+
