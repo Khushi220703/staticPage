@@ -16,6 +16,8 @@ body
    
 }
 
+/*Here is css for header section*/
+
 .header
 {
     background-color: white;
@@ -103,6 +105,8 @@ body
 }
 
 
+/*This is main section which is further divided into three main-left, main-middle and main-right */
+
 .main
 {
     
@@ -119,20 +123,8 @@ body
 }
 
 
+/*This is the main-left section having info about user picture, name, academy, name, groups, views and network*/
 
-.groups > h5
-{
-    color: rgb(165, 165, 241);
-}
-.groups .group
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 45%;
-    margin: 2px;
-    color: grey;
-}
 .main-left
 {
     background-color: white;
@@ -140,6 +132,24 @@ body
     height: 620px;
     border-radius: 6px;
     
+}
+
+.User-profile-image
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(192, 191, 191);
+}
+.backgrounImage
+{
+    width: 100%;
+    height: 70px;
+    background-image: linear-gradient(to right,rgb(237, 142, 158), rgb(211, 26, 110),rgb(210, 62, 87),rgb(164, 147, 150));
+   
+    border-radius:5px;
+    margin-bottom: 40px;
 }
 
 .Recent > h5
@@ -180,26 +190,22 @@ body
     flex-direction: column;
 }
 
-
-
-.User-profile-image
+.groups > h5
+{
+    color: rgb(165, 165, 241);
+}
+.groups .group
 {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid rgb(192, 191, 191);
-}
-.backgrounImage
-{
-    width: 100%;
-    height: 70px;
-    background-image: linear-gradient(to right,rgb(237, 142, 158), rgb(211, 26, 110),rgb(210, 62, 87),rgb(164, 147, 150));
-   
-    border-radius:5px;
-    margin-bottom: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 45%;
+    margin: 2px;
+    color: grey;
 }
 
+
+/*The middle section of main contains add post and post sections*/
 .main-middle
 {   
 
@@ -369,6 +375,8 @@ body
     
    
 }
+
+/*The right part of main contains news, courses and suggestions to user.*/
 .main-right
 {
     
